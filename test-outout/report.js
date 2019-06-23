@@ -78,50 +78,50 @@ formatter.match({
   "location": "DealStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 27162515200,
+  "duration": 15541472000,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 606019414,
+  "duration": 17917867,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 41394168320,
+  "duration": 327552000,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 6167317760,
+  "duration": 8940042240,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefinition.user_is_on_hopme_page()"
 });
 formatter.result({
-  "duration": 8851627,
+  "duration": 11974826,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefinition.user_moves_to_deals_page()"
 });
 formatter.result({
-  "duration": 7909056427,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id\u003d\u0027navmenu\u0027]/ul/li[5]/a\"}\n  (Session info: chrome\u003d74.0.3729.169)\n  (Driver info: chromedriver\u003d71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-4TE0GCSR\u0027, ip: \u0027192.168.120.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:61106}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897), userDataDir\u003dC:\\Users\\anjut\\AppData\\Local\\Temp\\scoped_dir8768_17632}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d74.0.3729.169, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 8773b9b2dd238feffb8fd31fc9c69578\n*** Element info: {Using\u003dxpath, value\u003d//div[@id\u003d\u0027navmenu\u0027]/ul/li[5]/a}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat stepDefinitions.DealStepDefinition.user_moves_to_deals_page(DealStepDefinition.java:65)\r\n\tat ✽.Then user moves to deals page(C:/Users/anjut/Desktop/cu/CucumberSeleniumFramework/src/main/java/Features/deals.feature:11)\r\n",
-  "status": "failed"
+  "duration": 5281336747,
+  "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.click_on_new_deal()"
+  "location": "DealStepDefinition.click_on_new_deal(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10084462507,
+  "status": "passed"
 });
 formatter.match({});
 formatter.result({

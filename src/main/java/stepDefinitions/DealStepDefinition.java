@@ -52,7 +52,7 @@ public class DealStepDefinition
 	 }
 	  
 	 @Then("^user is on home page$")
-	 public void user_is_on_hopme_page(){
+	 public void user_is_on_hopme_page() throws InterruptedException{
 	 String title = driver.getTitle();
 	 System.out.println("Home Page title ::"+ title);
 	 Assert.assertEquals("CRMPRO", title);
@@ -62,18 +62,25 @@ public class DealStepDefinition
 	public void user_moves_to_deals_page() throws InterruptedException
 	{
 		Thread.sleep(5000);
-	   WebElement deals=driver.findElement(By.xpath("//div[@id='navmenu']/ul/li[5]/a"));
+		driver.switchTo().frame("mainpanel");
+	   WebElement deals=driver.findElement(By.xpath("//a[text()='Deals']"));
 		Actions action=new Actions(driver);
 	    action.moveToElement(deals).perform();
 	}
 
 	@Then("^click on new deal$")
-	public void click_on_new_deal() throws InterruptedException
+	public void click_on_new_deal(DataTable credentials) throws InterruptedException
 	{
 		Thread.sleep(5000);
-		WebElement newdeals=driver.findElement(By.xpath("//*[@id=\"navmenu\"]/ul/li[5]/ul/li[1]/a"));
-			Actions action=new Actions(driver);
-		    action.moveToElement(newdeals).click().perform();
+		WebElement newdeals=driver.findElement(By.xpath("//a[text()='New Deal']"));
+		Actions action=new Actions(driver);
+		action.moveToElement(newdeals).click().perform();
+		List<List<String>> data=credentials.raw();
+		driver.findElement(By.id("title")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.id("amount")).sendKeys(data.get(0).get(1));
+		driver.findElement(By.id("probability")).sendKeys(data.get(0).get(2));
+		driver.findElement(By.id("commission")).sendKeys(data.get(0).get(3));
+		driver.findElement(By.xpath("//form[@id='prospectForm']/table/tbody/tr/td/input[@value='Save']")).submit();
 	}
 
 	 @Then("^Close the browser$")
